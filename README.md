@@ -1,4 +1,4 @@
-# GeMTL
+# Multi-Task-Learning
 
 This is an implementation of exploiting the generalized mean for per-task loss aggregation in multi-task learning.
 Our code is mainly based on [LibMTL](https://github.com/median-research-group/LibMTL?tab=readme-ov-file).
