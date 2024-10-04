@@ -5,6 +5,22 @@ import numpy as np
 
 from LibMTL.weighting.abstract_weighting import AbsWeighting
 
+'''
+From https://github.com/hw-ch0/IPMTL/blob/35009698edfcbe2893c04a1738505e60a62be7c5/im2im_pred/utils.py
+ 
+if index==0:
+    # w_semantic, w_depth, w_normal = 1/3, 1/3, 1/3
+    weights[index,:] = 1/3, 1/3, 1/3
+else:
+    loss_prev = weights[index-1,0]*avg_cost[index-1,0] + weights[index-1,1]*avg_cost[index-1,3] + weights[index-1,2]*avg_cost[index-1,6]
+    weights[index,:] = (loss_prev/avg_cost[index-1,0])/3, (loss_prev/avg_cost[index-1,3])/3, (loss_prev/avg_cost[index-1,6])/3
+    if not index==1:
+        loss_prev2 = weights[index-2,0]*avg_cost[index-2,0] + weights[index-2,1]*avg_cost[index-2,3] + weights[index-2,2]*avg_cost[index-2,6]
+        difficulties[index,0] = (avg_cost[index-1,0]/avg_cost[index-2,0]) / (loss_prev/loss_prev2)
+        difficulties[index,1] = (avg_cost[index-1,3]/avg_cost[index-2,3]) / (loss_prev/loss_prev2)
+        difficulties[index,2] = (avg_cost[index-1,6]/avg_cost[index-2,6]) / (loss_prev/loss_prev2)
+'''
+
 class LSBwoD(AbsWeighting):
     r"""Loss Scale Balancing (LSB).
     
