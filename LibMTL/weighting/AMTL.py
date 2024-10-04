@@ -41,10 +41,10 @@ class AMTL(AbsWeighting):
             weight = torch.pow(1 - cur_achievement / self.potentials, self.focusing_factor)
             weight = torch.softmax(weight, dim=0)
         
-        loss = torch.pow( torch.pow(losses, weight).prod(), 1./self.task_num) # GM
+        # loss = torch.pow( torch.pow(losses, weight).prod(), 1./self.task_num) # GM
         # loss = torch.mul(losses, weight).sum() # AM
-        # p = 2
-        # loss = torch.pow( (torch.mul(torch.pow(losses, p), weight)).sum() / self.task_num, 1/p) # QM
+        p = 2
+        loss = torch.pow( (torch.mul(torch.pow(losses, p), weight)).sum() / self.task_num, 1/p) # QM
         loss.backward()
         batch_weight = losses / (self.task_num * losses.prod())
         return batch_weight.detach().cpu().numpy()
