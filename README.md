@@ -3,6 +3,9 @@
 This is an implementation of exploiting the generalized mean for per-task loss aggregation in multi-task learning.
 Our code is mainly based on [LibMTL](https://github.com/median-research-group/LibMTL?tab=readme-ov-file).
 
+---
+We address the problem of loss balancing for multi-task learning (MTL), which learns multiple tasks simultaneously.
+
 ## Getting started
 
 1. Create a virtual environment
