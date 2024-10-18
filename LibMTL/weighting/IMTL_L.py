@@ -7,7 +7,12 @@ from LibMTL.weighting.abstract_weighting import AbsWeighting
 
 
 class IMTL_L(AbsWeighting):
+    r"""Impartial Multi-task Learning (IMTL).
+    
+    This method is proposed in `Towards Impartial Multi-task Learning (ICLR 2021) <https://openreview.net/forum?id=IMPnRXEWpvr>`_ \
+    and implemented by us.
 
+    """
     def __init__(self):
         super(IMTL_L, self).__init__()
     
