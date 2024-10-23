@@ -22,7 +22,11 @@ class GeMTL(AbsWeighting):
             
         self.p += 1 / (self.train_batch * self.epochs) 
         
-        loss = torch.pow( torch.pow(losses, self.p).sum() / self.task_num, 1/self.p) # GeM
+        if abs(self.p)<0.1:
+                loss = torch.pow( losses.prod(), 1./self.task_num) # GM
+        else:
+            loss = torch.pow( torch.pow(losses, self.p).sum() / self.task_num, 1/self.p) # GeM
+
         loss.backward()
         batch_weight = losses / (self.task_num * losses.prod())
         return batch_weight.detach().cpu().numpy()
