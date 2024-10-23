@@ -17,3 +17,5 @@ python main.py \
 --seed ${seed} \
 --scheduler step \
 --mode train 
+
+#>> logs/${arch}_${weighting}_seed${seed}.txt
