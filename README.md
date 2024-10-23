@@ -2,12 +2,7 @@
 
 This is an implementation of exploiting the generalized mean for per-task loss aggregation in multi-task learning.
 Our code is mainly based on [LibMTL](https://github.com/median-research-group/LibMTL?tab=readme-ov-file).
-
----
-We address the problem of loss balancing for multi-task learning (MTL), which learns multiple tasks simultaneously.
-The loss balancing problem is challenging in MTL since each task has a different loss scale, leading to an imbalance between optimizing task-specific losses.
-Many approaches to loss balancing typically exploit a linear combination of individual task losses with designed weights. Although these approaches have shown the effectiveness on balancing tasks, there is still a lack of understanding on the underlying principles of balancing in terms of updating task-specific modules.
-We first revisit an aggregation of task-specific losses and then show that generalized mean can be a good aggregation which takes advangetes of existing loss balancing methods with a proper parameter p while avoiding limitations. 
+ 
 
 ## Getting started
 
@@ -38,18 +33,7 @@ pip install -r requirements.txt
 ```
 Please ensure all dependencies are installed to avoid compatibility issues during execution.
 
-
-## Dataset
-
-You can download datasets in the following links.
-- [NYUv2](https://github.com/lorenmt/mtan)  
-- [Office-Home](https://www.hemanthdv.org/officeHomeDataset.html)
-
-
 ## Run
-
-Training and testing codes are in `./examples/{nyusp, office}/main.py`, where you can also customize hyperparameters for your experiments.
-You can check the results by running the following command.
 
 
 ```shell
@@ -61,15 +45,6 @@ Detailed logging is provided during training to help monitor performance across 
 
 ---
 Pretrained models and example outputs will be shared in future updates.
-
-## Reference
-
-Our implementation is developed on the following repositories. Thanks to the contributors!
-- [LibMTL](https://github.com/median-research-group/LibMTL?tab=readme-ov-file)  
-- [CAGrad](https://github.com/Cranial-XIX/CAGrad)  
-- [mtan](https://github.com/lorenmt/mtan)
-
-Feel free to contribute by submitting issues or pull requests to improve the repository.
 
 ## License
 
