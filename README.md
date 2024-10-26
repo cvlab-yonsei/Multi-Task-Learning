@@ -53,7 +53,7 @@ Our implementation is developed on the following repositories. Thanks to the con
 - [CAGrad](https://github.com/Cranial-XIX/CAGrad)  
 - [mtan](https://github.com/lorenmt/mtan)
 
-
+Feel free to contribute by submitting issues or pull requests to improve the repository.
 
 ## License
 
