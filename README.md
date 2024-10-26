@@ -46,6 +46,15 @@ Detailed logging is provided during training to help monitor performance across 
 ---
 Pretrained models and example outputs will be shared in future updates.
 
+## Reference
+
+Our implementation is developed on the following repositories. Thanks to the contributors!
+- [LibMTL](https://github.com/median-research-group/LibMTL?tab=readme-ov-file)  
+- [CAGrad](https://github.com/Cranial-XIX/CAGrad)  
+- [mtan](https://github.com/lorenmt/mtan)
+
+
+
 ## License
 
 This repository is released under the [GPL-3.0](./LICENSE) license.
