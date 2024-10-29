@@ -9,7 +9,7 @@ Our code is mainly based on [LibMTL](https://github.com/median-research-group/Li
   We address the problem of loss balancing for multi-task learning (MTL), which learns multiple tasks simultaneously.
 The loss balancing problem is challenging in MTL since each task has a different loss scale, leading to an imbalance between optimizing task-specific losses.
 Many approaches to loss balancing typically exploit a linear combination of individual task losses with designed weights. Although these approaches have shown the effectiveness on balancing tasks, there is still a lack of understanding on the underlying principles of balancing in terms of updating task-specific modules.
-We first revisit an aggregation of task-specific losses and then show that generalized mean can be a good aggregation which takes advangetes of existing loss balancing methods with a proper parameter p while avoiding limitations. 
+We first revisit an aggregation of task-specific losses and then show that generalized mean can be a good aggregation which takes advangetes of existing loss balancing methods with a proper parameter which control an aggregation extent while avoiding limitations. 
 </details>
 
 ## Getting started
