@@ -48,7 +48,8 @@ You can download datasets in the following links.
 - [Office-Home](https://www.hemanthdv.org/officeHomeDataset.html)
 
 ## Run
-
+Training and testing codes are in `./examples/{nyusp, office}/main.py`, where you can also customize hyperparameters for your experiments.
+You can check the results by running the following command.
 
 ```shell
 cd ./examples/{nyusp, office}
