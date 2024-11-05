@@ -89,7 +89,7 @@ def prepare_args(params):
                             'PCGrad', 'GradVac', 'CAGrad', 'GradDrop', 'DWA', 
                             'Nash_MTL', 'MoCo', 'Aligned_MTL',
                             'SI', 'SI_naive',
-                            'AMTL', 'AMTL_GeM_anti', 'AMTL_GeM_curri',
+                            'AMTL',
                             'GeMTL']:
         if params.weighting in ['DWA']:
             if params.T is not None:
