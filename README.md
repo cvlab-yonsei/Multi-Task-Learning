@@ -35,6 +35,10 @@ We first revisit an aggregation of task-specific losses and then show that gener
 
 - Python >= 3.8
 - Pytorch >= 1.8.1
+- GPU: NVIDIA GeForce RTX 2080 Ti
+- Driver Version: 525
+- CUDA Version: 12.0
+- VRAM Usage: Slightly over 7000MB
 
 ```shell
 pip install -r requirements.txt
